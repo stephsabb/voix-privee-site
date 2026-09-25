@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071321">
+    <meta name="description" content="Voix Privée enregistre et transcrit vos paroles localement sur iPhone, puis protège vos textes avec un chiffrement post-quantique.">
+    <title>Voix Privée — Votre voix. Vos clés.</title>
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" id="accueil">
+      <nav class="nav shell" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Voix Privée — accueil">
+          <img src="assets/app-icon.png" alt="" width="44" height="44">
+          <span>Voix Privée</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Ouvrir le menu</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#fonctionnement">Fonctionnement</a>
+          <a href="#iphone">iPhone</a>
+          <a href="#mac">Mac</a>
+          <a href="#confidentialite">Confidentialité</a>
+          <a class="nav-cta" href="https://github.com/stephsabb/voix-privee">Voir le projet</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="hero">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span></span> Local par défaut</div>
+            <h1>Vos paroles méritent de rester <em>à vous.</em></h1>
+            <p class="hero-lead">Enregistrez votre voix, transcrivez-la directement sur votre iPhone et protégez chaque texte avec un chiffrement post-quantique.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#iphone">Découvrir l’application</a>
+              <a class="button button-ghost" href="#confidentialite">Comment vos mots sont protégés</a>
+            </div>
+            <ul class="hero-checks" aria-label="Points essentiels">
+              <li>Audio conservé localement</li>
+              <li>Transcription Whisper sur l’iPhone</li>
+              <li>Export age chiffré</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="1">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="phone hero-phone">
+              <div class="phone-screen">
+                <img src="assets/iphone-record-ready.png" alt="Écran d’enregistrement de Voix Privée sur iPhone" width="1206" height="2622">
+                <div class="screenshot-words" aria-hidden="true">
+                  <strong>Vos paroles méritent<br>d’être gardées.</strong>
+                  <small>Coffre ouvert · contenu chiffré au repos.</small>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card floating-card-top">
+              <span class="status-dot"></span>
+              <div><strong>Sur cet iPhone</strong><small>Aucun audio envoyé</small></div>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <div class="mini-lock" aria-hidden="true">⌁</div>
+              <div><strong>Chiffré au repos</strong><small>ML-KEM-768 + X25519</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Caractéristiques principales">
+        <div class="shell trust-grid">
+          <div><strong>∞</strong><span>Durée libre selon l’espace disponible</span></div>
+          <div><strong>FR</strong><span>Transcription française locale</span></div>
+          <div><strong>PQ</strong><span>Chiffrement hybride post-quantique</span></div>
+          <div><strong>2</strong><span>Applications pour un parcours complet</span></div>
+        </div>
+      </section>
+
+      <section class="section flow" id="fonctionnement">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div class="eyebrow dark"><span></span> De la voix à l’essentiel</div>
+            <h2>Un parcours simple.<br>Une maîtrise complète.</h2>
+            <p>Chaque étape reste explicite : vous choisissez quand transcrire, où exporter et comment analyser vos textes.</p>
+          </div>
+
+          <ol class="flow-grid">
+            <li class="flow-card reveal">
+              <span class="step">01</span>
+              <div class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M24 30a8 8 0 0 0 8-8V12a8 8 0 1 0-16 0v10a8 8 0 0 0 8 8Z"/><path d="M11 22a13 13 0 0 0 26 0M24 35v8M17 43h14"/></svg>
+              </div>
+              <h3>Enregistrez</h3>
+              <p>L’onde réagit à votre voix en temps réel. L’enregistrement reste sur l’iPhone, sans limite arbitraire.</p>
+            </li>
+            <li class="flow-card reveal" data-delay="1">
+              <span class="step">02</span>
+              <div class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M8 24h4m4-8v16m6-23v30m6-24v18m6-12v6m6-11v16"/></svg>
+              </div>
+              <h3>Transcrivez</h3>
+              <p>Lancez une transcription quand vous le souhaitez. Whisper fonctionne localement et peut poursuivre un temps en arrière-plan.</p>
+            </li>
+            <li class="flow-card reveal" data-delay="2">
+              <span class="step">03</span>
+              <div class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="9" y="20" width="30" height="23" rx="5"/><path d="M16 20v-6a8 8 0 0 1 16 0v6M24 29v7"/></svg>
+              </div>
+              <h3>Chiffrez</h3>
+              <p>Chaque note rejoint votre coffre chiffré. Les exports destinés à vos ordinateurs utilisent le format ouvert age.</p>
+            </li>
+            <li class="flow-card reveal" data-delay="3">
+              <span class="step">04</span>
+              <div class="flow-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M7 9h34v25H7zM17 42h14M24 34v8"/><path d="m17 21 5 5 10-11"/></svg>
+              </div>
+              <h3>Synthétisez</h3>
+              <p>Ouvrez le texte sur Mac, puis choisissez un LLM local avec Ollama ou un service distant après confirmation.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section iphone-section" id="iphone">
+        <div class="shell product-grid">
+          <div class="product-copy reveal">
+            <div class="eyebrow dark"><span></span> Sur iPhone</div>
+            <h2>Un studio de poche.<br>Un coffre personnel.</h2>
+            <p class="product-intro">Conçue pour l’iPhone 15 Pro et les modèles plus récents, l’application suit le mode clair ou sombre du système et garde le contrôle au bout de vos doigts.</p>
+
+            <div class="screen-tabs" role="tablist" aria-label="Captures de l’application iPhone">
+              <button class="screen-tab active" type="button" role="tab" aria-selected="true" data-image="assets/iphone-onboarding.png" data-alt="Ouverture sécurisée du coffre Voix Privée" data-label="Coffre protégé" data-copy="Face ID ou le code de l’iPhone protège l’accès à vos notes et à vos clés." data-words="false">
+                <span>01</span><strong>Ouvrir le coffre</strong>
+              </button>
+              <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-record-ready.png" data-alt="Écran prêt à enregistrer dans Voix Privée" data-label="Prêt à enregistrer" data-copy="Capturez vos paroles instantanément, avec un audio conservé uniquement sur l’appareil." data-words="true">
+                <span>02</span><strong>Enregistrer</strong>
+              </button>
+              <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-recording.png" data-alt="Enregistrement audio actif avec onde réactive" data-label="Onde en temps réel" data-copy="L’oscilloscope circulaire suit les variations de la voix pendant toute la prise." data-words="false">
+                <span>03</span><strong>Suivre la voix</strong>
+              </button>
+              <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-settings.png" data-alt="Réglages de confidentialité et du modèle Whisper" data-label="Local par conception" data-copy="Installez Whisper, vérifiez la confidentialité et sauvegardez votre clé depuis un même écran." data-words="false">
+                <span>04</span><strong>Gérer la confidentialité</strong>
+              </button>
+            </div>
+          </div>
+
+          <div class="phone-showcase reveal" data-delay="1">
+            <div class="showcase-halo"></div>
+            <div class="phone showcase-phone">
+              <div class="phone-screen">
+                <img id="iphone-preview" src="assets/iphone-onboarding.png" alt="Ouverture sécurisée du coffre Voix Privée" width="1206" height="2622">
+                <div id="preview-words" class="screenshot-words hidden" aria-hidden="true">
+                  <strong>Vos paroles méritent<br>d’être gardées.</strong>
+                  <small>Coffre ouvert · contenu chiffré au repos.</small>
+                </div>
+              </div>
+            </div>
+            <div class="screen-caption" aria-live="polite">
+              <strong id="screen-label">Coffre protégé</strong>
+              <span id="screen-copy">Face ID ou le code de l’iPhone protège l’accès à vos notes et à vos clés.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security-section" id="confidentialite">
+        <div class="security-grid-overlay"></div>
+        <div class="shell security-grid">
+          <div class="security-copy reveal">
+            <div class="eyebrow mint"><span></span> Confidentialité vérifiable</div>
+            <h2>Le local est le point de départ.</h2>
+            <p>Voix Privée réduit les sorties de données par conception. L’audio et la transcription restent sur l’iPhone jusqu’à ce que vous décidiez d’exporter.</p>
+            <div class="cipher-line">
+              <span>ML-KEM-768</span><i>+</i><span>X25519</span><i>→</i><span>ChaCha20-Poly1305</span>
+            </div>
+          </div>
+          <div class="security-cards">
+            <article class="security-card reveal">
+              <span class="security-number">01</span>
+              <h3>Transcription embarquée</h3>
+              <p>Le modèle Whisper s’exécute sur l’iPhone. Seule son installation initiale nécessite Internet.</p>
+            </article>
+            <article class="security-card reveal" data-delay="1">
+              <span class="security-number">02</span>
+              <h3>Clés sous votre contrôle</h3>
+              <p>La clé privée iPhone est protégée par le trousseau et la présence utilisateur, sans synchronisation iCloud.</p>
+            </article>
+            <article class="security-card reveal" data-delay="2">
+              <span class="security-number">03</span>
+              <h3>Destinataires explicites</h3>
+              <p>Chaque export est chiffré pour les ordinateurs que vous avez associés et dont vous avez vérifié l’empreinte.</p>
+            </article>
+            <article class="security-card reveal" data-delay="3">
+              <span class="security-number">04</span>
+              <h3>Envoi distant confirmé</h3>
+              <p>Un LLM distant ne reçoit un texte déchiffré qu’après affichage du domaine et confirmation de votre part.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mac-section" id="mac">
+        <div class="shell">
+          <div class="mac-heading reveal">
+            <div>
+              <div class="eyebrow dark"><span></span> Sur votre Mac</div>
+              <h2>Déchiffrez. Relisez.<br>Allez à l’essentiel.</h2>
+            </div>
+            <p>Votre Mac reçoit les fichiers <code>.age</code>, déchiffre le texte en mémoire et vous laisse choisir le moteur qui produira le résumé ou la synthèse.</p>
+          </div>
+
+          <div class="mac-stage reveal">
+            <div class="mac-aura"></div>
+            <img src="assets/mac-app.png" alt="Application Voix Privée sur Mac, avec transcription et réglages de synthèse locale" width="2144" height="1624">
+          </div>
+
+          <div class="llm-grid">
+            <article class="llm-card local reveal">
+              <div class="card-tag"><span class="status-dot"></span> Traitement local</div>
+              <h3>Ollama, sur votre ordinateur</h3>
+              <p>Connectez un modèle déjà installé à l’adresse locale de votre choix. Le texte ne quitte pas votre machine.</p>
+              <ul>
+                <li>Résumé et points essentiels</li>
+                <li>Décisions et actions</li>
+                <li>Export clair ou rechiffré</li>
+              </ul>
+            </article>
+            <article class="llm-card remote reveal" data-delay="1">
+              <div class="card-tag">Traitement distant optionnel</div>
+              <h3>Une API compatible, si vous le décidez</h3>
+              <p>Choisissez votre fournisseur. L’application affiche la destination et attend votre accord avant chaque transmission.</p>
+              <ul>
+                <li>Connexion HTTPS exigée</li>
+                <li>Clé API conservée en mémoire</li>
+                <li>Aucun envoi automatique</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section details-section">
+        <div class="shell details-grid">
+          <div class="section-heading reveal">
+            <div class="eyebrow dark"><span></span> Questions fréquentes</div>
+            <h2>Clair jusque dans les détails.</h2>
+          </div>
+          <div class="faq reveal" data-delay="1">
+            <details open>
+              <summary>La transcription fonctionne-t-elle sans Internet ?</summary>
+              <p>Oui, après l’installation initiale du modèle Whisper. Les fichiers du modèle sont ensuite utilisés directement sur l’iPhone.</p>
+            </details>
+            <details>
+              <summary>Puis-je transcrire plus tard ?</summary>
+              <p>Oui. Chaque enregistrement rejoint une file locale. Vous pouvez lancer un élément précis ou toute la file quand vous le souhaitez.</p>
+            </details>
+            <details>
+              <summary>Un service distant reçoit-il mes notes ?</summary>
+              <p>Pas par défaut. Un service LLM distant ne reçoit le texte qu’après votre choix explicite et une confirmation affichant le destinataire.</p>
+            </details>
+            <details>
+              <summary>Que se passe-t-il si je perds mes clés ?</summary>
+              <p>Sans clé ou sauvegarde exploitable, les notes concernées ne peuvent pas être récupérées. L’application permet donc d’exporter des sauvegardes chiffrées.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="final-orbit final-orbit-one"></div>
+        <div class="final-orbit final-orbit-two"></div>
+        <div class="shell final-content reveal">
+          <img src="assets/app-icon.png" alt="Icône Voix Privée" width="108" height="108">
+          <div class="eyebrow mint"><span></span> Voix Privée</div>
+          <h2>Votre voix.<br>Vos clés.</h2>
+          <p>Une chaîne complète pour enregistrer, transcrire, chiffrer et synthétiser vos paroles selon vos propres choix.</p>
+          <a class="button button-primary" href="https://github.com/stephsabb/voix-privee">Découvrir le projet sur GitHub</a>
+          <small>Version de développement 0.1.2 · iPhone 15 Pro ou plus récent · macOS Apple silicon</small>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <a class="brand" href="#accueil">
+          <img src="assets/app-icon.png" alt="" width="38" height="38">
+          <span>Voix Privée</span>
+        </a>
+        <p>Transcription locale et chiffrement post-quantique.</p>
+        <p>© <span id="year">2026</span> Voix Privée</p>
+      </div>
+    </footer>
+  </body>
+</html>
