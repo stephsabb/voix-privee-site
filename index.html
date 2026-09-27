@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#071321">
-    <meta name="description" content="Voix Privée enregistre et transcrit vos paroles localement sur iPhone, puis protège vos textes avec un chiffrement post-quantique.">
+    <meta name="description" content="Voix Privée enregistre vos paroles sur iPhone ou Apple Watch, les transcrit localement, puis protège vos textes avec un chiffrement post-quantique. Déchiffrement sur macOS et Windows.">
     <title>Voix Privée — Votre voix. Vos clés.</title>
     <link id="app-icon-favicon" rel="icon" href="assets/app-icon.png?v=20260927" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=20260925-2">
+    <link rel="stylesheet" href="styles.css?v=20260927-1">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -26,7 +26,8 @@
         <div class="nav-links" id="nav-links">
           <a href="#fonctionnement">Fonctionnement</a>
           <a href="#iphone">iPhone</a>
-          <a href="#mac">Mac</a>
+          <a href="#ecosysteme">Apple Watch</a>
+          <a href="#mac">Mac &amp; Windows</a>
           <a href="#confidentialite">Confidentialité</a>
           <a class="nav-cta" href="https://github.com/stephsabb/voix-privee">Voir le projet</a>
         </div>
@@ -82,7 +83,7 @@
           <div><strong>∞</strong><span>Durée libre selon l’espace disponible</span></div>
           <div><strong>FR</strong><span>Transcription française locale</span></div>
           <div><strong>PQ</strong><span>Chiffrement hybride post-quantique</span></div>
-          <div><strong>2</strong><span>Applications pour un parcours complet</span></div>
+          <div><strong>4</strong><span>Applications pour iPhone, Apple Watch, macOS et Windows</span></div>
         </div>
       </section>
 
@@ -101,7 +102,7 @@
                 <svg viewBox="0 0 48 48"><path d="M24 30a8 8 0 0 0 8-8V12a8 8 0 1 0-16 0v10a8 8 0 0 0 8 8Z"/><path d="M11 22a13 13 0 0 0 26 0M24 35v8M17 43h14"/></svg>
               </div>
               <h3>Enregistrez</h3>
-              <p>L’onde réagit à votre voix en temps réel. L’enregistrement reste sur l’iPhone, sans limite arbitraire.</p>
+              <p>L’onde réagit à votre voix en temps réel. Enregistrez sans limite arbitraire depuis l’iPhone ou directement depuis l’Apple Watch.</p>
             </li>
             <li class="flow-card reveal" data-delay="1">
               <span class="step">02</span>
@@ -125,7 +126,7 @@
                 <svg viewBox="0 0 48 48"><path d="M7 9h34v25H7zM17 42h14M24 34v8"/><path d="m17 21 5 5 10-11"/></svg>
               </div>
               <h3>Synthétisez</h3>
-              <p>Ouvrez le texte sur Mac, puis choisissez un LLM local avec Ollama ou un service distant après confirmation.</p>
+              <p>Ouvrez le texte sur macOS ou Windows, puis choisissez un LLM local avec Ollama ou un service distant après confirmation.</p>
             </li>
           </ol>
         </div>
@@ -136,7 +137,20 @@
           <div class="product-copy reveal">
             <div class="eyebrow dark"><span></span> Sur iPhone</div>
             <h2>Un studio de poche.<br>Un coffre personnel.</h2>
-            <p class="product-intro">Conçue pour l’iPhone 15 Pro et les modèles plus récents, l’application suit le mode clair ou sombre du système et garde le contrôle au bout de vos doigts.</p>
+            <p class="product-intro">Compatible avec les iPhone sous iOS 26, l’application est recommandée à partir de l’iPhone 15 Pro pour garantir de bonnes performances de transcription locale. Elle suit le mode clair ou sombre du système et garde le contrôle au bout de vos doigts.</p>
+
+            <div class="compatibility-panel" aria-label="Compatibilité iPhone">
+              <div class="compatibility-item">
+                <span class="compatibility-label">Installation · iOS 26 minimum</span>
+                <strong>iPhone 11 et modèles ultérieurs</strong>
+                <p>iPhone 11, 11 Pro et 11 Pro Max ; toutes les gammes iPhone 12, 13, 14, 15, 16 et 17 ; iPhone Air ; iPhone SE de 2ᵉ ou 3ᵉ génération.</p>
+              </div>
+              <div class="compatibility-item recommended">
+                <span class="compatibility-label">Recommandé · transcription locale</span>
+                <strong>iPhone 15 Pro ou plus récent</strong>
+                <p>iPhone 15 Pro et 15 Pro Max ; tous les iPhone 16 et 17, y compris 16e et 17e ; iPhone Air ; ainsi que les futurs modèles plus puissants.</p>
+              </div>
+            </div>
 
             <div class="screen-tabs" role="tablist" aria-label="Captures de l’application iPhone">
               <button class="screen-tab active" type="button" role="tab" aria-selected="true" data-image="assets/iphone-onboarding.png" data-alt="Ouverture sécurisée du coffre Voix Privée" data-label="Coffre protégé" data-copy="Face ID ou le code de l’iPhone protège l’accès à vos notes et à vos clés." data-words="false">
@@ -169,6 +183,45 @@
               <strong id="screen-label">Coffre protégé</strong>
               <span id="screen-copy">Face ID ou le code de l’iPhone protège l’accès à vos notes et à vos clés.</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ecosystem-section" id="ecosysteme">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div class="eyebrow dark"><span></span> Du poignet à l’ordinateur</div>
+            <h2>Enregistrez partout.<br>Déchiffrez où vous voulez.</h2>
+            <p>Voix Privée relie quatre applications sans retirer le contrôle à l’utilisateur : la capture sur iPhone ou Apple Watch, puis le déchiffrement et la synthèse sur macOS ou Windows.</p>
+          </div>
+
+          <div class="ecosystem-grid">
+            <article class="ecosystem-card watch reveal">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="12" y="9" width="24" height="30" rx="9"/><path d="M18 9 20 4h8l2 5M18 39l2 5h8l2-5M19 24h10M24 19v10"/></svg>
+              </div>
+              <span class="platform-name">Apple Watch</span>
+              <h3>Une app compagnon et sa complication</h3>
+              <p>Lancez rapidement un enregistrement depuis la complication. L’audio est conservé sur la montre, puis transmis à l’iPhone dès que la liaison est disponible pour rejoindre la file de transcription.</p>
+            </article>
+
+            <article class="ecosystem-card desktop reveal" data-delay="1">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="6" y="8" width="36" height="26" rx="3"/><path d="M17 42h14M24 34v8M11 29h26"/></svg>
+              </div>
+              <span class="platform-name">macOS &amp; Windows</span>
+              <h3>Le même coffre sur vos ordinateurs</h3>
+              <p>L’application de déchiffrement est disponible sur Mac et PC Windows. Elle ouvre les fichiers <code>.age</code>, garde le texte déchiffré en mémoire et permet de produire un résumé avec un LLM local ou distant choisi explicitement.</p>
+            </article>
+
+            <article class="ecosystem-card privacy reveal" data-delay="2">
+              <div class="platform-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M24 5 39 11v11c0 10-6 17-15 21C15 39 9 32 9 22V11Z"/><rect x="18" y="21" width="12" height="10" rx="2"/><path d="M20 21v-3a4 4 0 0 1 8 0v3"/></svg>
+              </div>
+              <span class="platform-name">Continuité chiffrée</span>
+              <h3>Vos paroles restent protégées</h3>
+              <p>La montre transmet l’audio à votre iPhone pour la transcription. Les textes exportés vers macOS ou Windows restent chiffrés pour les destinataires que vous avez associés.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -219,10 +272,10 @@
         <div class="shell">
           <div class="mac-heading reveal">
             <div>
-              <div class="eyebrow dark"><span></span> Sur votre Mac</div>
+              <div class="eyebrow dark"><span></span> Sur macOS et Windows</div>
               <h2>Déchiffrez. Relisez.<br>Allez à l’essentiel.</h2>
             </div>
-            <p>Votre Mac reçoit les fichiers <code>.age</code>, déchiffre le texte en mémoire et vous laisse choisir le moteur qui produira le résumé ou la synthèse.</p>
+            <p>Votre Mac ou PC Windows reçoit les fichiers <code>.age</code>, déchiffre le texte en mémoire et vous laisse choisir le moteur qui produira le résumé ou la synthèse.</p>
           </div>
 
           <div class="mac-stage reveal">
@@ -234,7 +287,7 @@
             <article class="llm-card local reveal">
               <div class="card-tag"><span class="status-dot"></span> Traitement local</div>
               <h3>Ollama, sur votre réseau privé</h3>
-              <p>Connectez un modèle installé sur ce Mac ou sur un ordinateur de confiance du réseau local. Le mode Ollama refuse les adresses Internet publiques.</p>
+              <p>Depuis macOS ou Windows, connectez un modèle installé sur cet ordinateur ou sur une machine de confiance du réseau local. Le mode Ollama refuse les adresses Internet publiques.</p>
               <ul>
                 <li>Adresse locale ou privée uniquement</li>
                 <li>Décisions et actions</li>
@@ -271,6 +324,14 @@
               <p>Oui. Chaque enregistrement rejoint une file locale. Vous pouvez lancer un élément précis ou toute la file quand vous le souhaitez.</p>
             </details>
             <details>
+              <summary>Puis-je enregistrer depuis mon Apple Watch ?</summary>
+              <p>Oui. L’app compagnon et sa complication permettent de démarrer au poignet. L’enregistrement est conservé sur la montre jusqu’à son transfert vers l’iPhone, qui prend ensuite en charge la transcription.</p>
+            </details>
+            <details>
+              <summary>Sur quels ordinateurs puis-je déchiffrer mes textes ?</summary>
+              <p>L’application compagnon est disponible pour macOS et Windows. Les deux versions ouvrent les fichiers chiffrés <code>.age</code> et permettent une synthèse avec Ollama ou une API compatible.</p>
+            </details>
+            <details>
               <summary>Un service distant reçoit-il mes notes ?</summary>
               <p>Pas par défaut. Un service LLM distant ne reçoit le texte qu’après votre choix explicite et une confirmation affichant le destinataire.</p>
             </details>
@@ -291,7 +352,7 @@
           <h2>Votre voix.<br>Vos clés.</h2>
           <p>Une chaîne complète pour enregistrer, transcrire, chiffrer et synthétiser vos paroles selon vos propres choix.</p>
           <a class="button button-primary" href="https://github.com/stephsabb/voix-privee">Découvrir le projet sur GitHub</a>
-          <small>Version de développement 0.1.2 · iPhone 15 Pro ou plus récent · macOS Apple silicon</small>
+          <small>iOS 26 minimum · iPhone 15 Pro ou plus récent recommandé · Apple Watch · macOS · Windows</small>
         </div>
       </section>
     </main>
