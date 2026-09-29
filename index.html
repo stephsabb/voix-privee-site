@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#071321">
-    <meta name="description" content="Voix Privée enregistre vos paroles sur iPhone ou Apple Watch, les transcrit localement, puis protège vos textes avec un chiffrement post-quantique. Déchiffrement sur macOS et Windows.">
+    <meta name="description" content="Voix Privée enregistre vos paroles sur iPhone ou Apple Watch, les transcrit et peut les résumer localement sur l’iPhone, puis protège vos textes avec un chiffrement post-quantique. Déchiffrement sur macOS et Windows.">
     <title>Voix Privée — Votre voix. Vos clés.</title>
     <link id="app-icon-favicon" rel="icon" href="assets/app-icon.png?v=20260927" type="image/png">
     <link rel="stylesheet" href="styles.css?v=20260927-4">
@@ -42,14 +42,15 @@
           <div class="hero-copy reveal">
             <div class="eyebrow"><span></span> Local par défaut</div>
             <h1>Vos paroles méritent de rester <em>à vous.</em></h1>
-            <p class="hero-lead">Enregistrez votre voix, transcrivez-la directement sur votre iPhone et protégez chaque texte avec un chiffrement post-quantique.</p>
+            <p class="hero-lead">Enregistrez votre voix, transcrivez-la puis, si vous le souhaitez, créez un résumé ou une synthèse directement sur votre iPhone. Aucun cloud ni service sur ordinateur n’est nécessaire.</p>
             <div class="hero-actions">
               <a class="button button-primary" href="#iphone">Découvrir l’application</a>
               <a class="button button-ghost" href="#confidentialite">Comment vos mots sont protégés</a>
             </div>
             <ul class="hero-checks" aria-label="Points essentiels">
               <li>Audio conservé localement</li>
-              <li>Transcription Whisper sur l’iPhone</li>
+              <li>Transcription Apple sur l’iPhone</li>
+              <li>Résumé et synthèse sur l’iPhone</li>
               <li>Export age chiffré</li>
             </ul>
           </div>
@@ -110,7 +111,7 @@
                 <svg viewBox="0 0 48 48"><path d="M8 24h4m4-8v16m6-23v30m6-24v18m6-12v6m6-11v16"/></svg>
               </div>
               <h3>Transcrivez</h3>
-              <p>Lancez une transcription quand vous le souhaitez. Whisper fonctionne localement et peut poursuivre un temps en arrière-plan.</p>
+              <p>Lancez une transcription quand vous le souhaitez. SpeechTranscriber fonctionne localement et peut poursuivre un temps en arrière-plan.</p>
             </li>
             <li class="flow-card reveal" data-delay="2">
               <span class="step">03</span>
@@ -126,7 +127,7 @@
                 <svg viewBox="0 0 48 48"><path d="M7 9h34v25H7zM17 42h14M24 34v8"/><path d="m17 21 5 5 10-11"/></svg>
               </div>
               <h3>Synthétisez</h3>
-              <p>Ouvrez le texte sur macOS ou Windows, puis choisissez un LLM local avec Ollama ou un service distant après confirmation.</p>
+              <p>Créez le résumé ou la synthèse directement sur l’iPhone avec Apple Intelligence. Vous pouvez aussi utiliser Ollama sur votre réseau privé ou un service distant après confirmation.</p>
             </li>
           </ol>
         </div>
@@ -137,7 +138,7 @@
           <div class="product-copy reveal">
             <div class="eyebrow dark"><span></span> Sur iPhone</div>
             <h2>Un studio de poche.<br>Un coffre personnel.</h2>
-            <p class="product-intro">Compatible avec les iPhone sous iOS 26, l’application est recommandée à partir de l’iPhone 15 Pro pour garantir de bonnes performances de transcription locale. Elle suit le mode clair ou sombre du système et garde le contrôle au bout de vos doigts.</p>
+            <p class="product-intro">Compatible avec les iPhone sous iOS 26, l’application est recommandée à partir de l’iPhone 15 Pro pour garantir de bonnes performances de transcription locale. Sur un modèle compatible avec Apple Intelligence, elle peut aussi résumer une discussion ou en produire une synthèse structurée entièrement sur l’iPhone.</p>
 
             <div class="compatibility-panel" aria-label="Compatibilité iPhone">
               <div class="compatibility-item">
@@ -149,6 +150,11 @@
                 <span class="compatibility-label">Recommandé · transcription locale</span>
                 <strong>iPhone 15 Pro ou plus récent</strong>
                 <p>iPhone 15 Pro et 15 Pro Max ; tous les iPhone 16 et 17, y compris 16e et 17e ; iPhone Air ; ainsi que les futurs modèles plus puissants.</p>
+              </div>
+              <div class="compatibility-item recommended">
+                <span class="compatibility-label">Optionnel · analyse embarquée</span>
+                <strong>Résumé et synthèse avec Apple Intelligence</strong>
+                <p>Choisissez un résumé concis ou une synthèse structurée. Le modèle intégré à iOS traite la transcription sur l’iPhone et enregistre le résultat dans le coffre chiffré, sans cloud ni service exécuté sur votre PC ou votre Mac.</p>
               </div>
             </div>
 
@@ -162,7 +168,7 @@
               <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-recording.png" data-alt="Enregistrement audio actif avec onde réactive" data-label="Onde en temps réel" data-copy="L’oscilloscope circulaire suit les variations de la voix pendant toute la prise." data-words="false">
                 <span>03</span><strong>Suivre la voix</strong>
               </button>
-              <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-settings.png" data-alt="Réglages de confidentialité et du modèle Whisper" data-label="Local par conception" data-copy="Installez Whisper, vérifiez la confidentialité et sauvegardez votre clé depuis un même écran." data-words="false">
+              <button class="screen-tab" type="button" role="tab" aria-selected="false" data-image="assets/iphone-settings.png" data-alt="Réglages de confidentialité et du modèle de transcription Apple" data-label="Local par conception" data-copy="Installez le modèle Apple, vérifiez la confidentialité et sauvegardez votre clé depuis un même écran." data-words="false">
                 <span>04</span><strong>Gérer la confidentialité</strong>
               </button>
             </div>
@@ -192,7 +198,7 @@
           <div class="section-heading reveal">
             <div class="eyebrow dark"><span></span> Du poignet à l’ordinateur</div>
             <h2>Enregistrez partout.<br>Déchiffrez où vous voulez.</h2>
-            <p>Voix Privée relie quatre applications sans retirer le contrôle à l’utilisateur : la capture sur iPhone ou Apple Watch, puis le déchiffrement et la synthèse sur macOS ou Windows.</p>
+            <p>Voix Privée relie quatre applications sans retirer le contrôle à l’utilisateur : capturez sur iPhone ou Apple Watch, produisez éventuellement la synthèse sur l’iPhone, puis déchiffrez aussi vos exports sur macOS ou Windows.</p>
           </div>
 
           <div class="ecosystem-grid">
@@ -247,7 +253,7 @@
             <article class="security-card reveal">
               <span class="security-number">01</span>
               <h3>Transcription embarquée</h3>
-              <p>Le modèle Whisper s’exécute sur l’iPhone. Seule son installation initiale nécessite Internet.</p>
+              <p>SpeechTranscriber s’exécute entièrement sur l’iPhone. Seule l’installation initiale de son modèle français nécessite Internet.</p>
             </article>
             <article class="security-card reveal" data-delay="1">
               <span class="security-number">02</span>
@@ -261,8 +267,8 @@
             </article>
             <article class="security-card reveal" data-delay="3">
               <span class="security-number">04</span>
-              <h3>Envoi distant confirmé</h3>
-              <p>Un LLM distant ne reçoit un texte déchiffré qu’après affichage du domaine et confirmation de votre part.</p>
+              <h3>Analyse locale optionnelle</h3>
+              <p>Apple Intelligence peut résumer ou structurer la transcription directement sur l’iPhone. Le résultat reste dans le coffre chiffré.</p>
             </article>
           </div>
         </div>
@@ -317,11 +323,15 @@
           <div class="faq reveal" data-delay="1">
             <details open>
               <summary>La transcription fonctionne-t-elle sans Internet ?</summary>
-              <p>Oui, après l’installation initiale du modèle Whisper. Les fichiers du modèle sont ensuite utilisés directement sur l’iPhone.</p>
+              <p>Oui, après l’installation initiale du modèle français SpeechTranscriber. Il est ensuite utilisé directement sur l’iPhone.</p>
             </details>
             <details>
               <summary>Puis-je transcrire plus tard ?</summary>
               <p>Oui. Chaque enregistrement rejoint une file locale. Vous pouvez lancer un élément précis ou toute la file quand vous le souhaitez.</p>
+            </details>
+            <details>
+              <summary>Puis-je obtenir un résumé sans cloud ni ordinateur ?</summary>
+              <p>Oui. Sur un iPhone compatible avec Apple Intelligence, Voix Privée peut produire à la demande un résumé ou une synthèse structurée directement sur l’appareil. La transcription n’est envoyée ni à un service cloud ni à votre PC ou votre Mac, et le résultat est conservé dans le coffre chiffré.</p>
             </details>
             <details>
               <summary>Puis-je enregistrer depuis mon Apple Watch ?</summary>
