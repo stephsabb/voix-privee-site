@@ -400,3 +400,32 @@ button { color: inherit; }
   /* The presentation keeps its deliberate light/dark rhythm while respecting system UI controls. */
   :root { color-scheme: dark; }
 }
+
+
+.downloads-section { color: white; background: #0a1725; }
+.download-heading { display: grid; grid-template-columns: 1fr .72fr; gap: 80px; align-items: end; margin-bottom: 52px; }
+.download-heading h2 { margin-bottom: 0; }
+.download-heading > p { margin: 0 0 8px; color: #aebac5; font-size: 1.06rem; }
+.downloads-section .eyebrow.dark { color: var(--mint); }
+.download-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.download-card { display: flex; min-height: 390px; padding: 36px; flex-direction: column; align-items: flex-start; border: 1px solid rgba(255, 255, 255, .11); border-radius: 28px; background: rgba(255, 255, 255, .045); }
+.download-card-mac { border-color: rgba(118, 224, 207, .32); background: linear-gradient(145deg, rgba(118, 224, 207, .12), rgba(255, 255, 255, .04)); }
+.download-platform { display: inline-flex; padding: 7px 12px; border: 1px solid rgba(118, 224, 207, .25); border-radius: 999px; color: var(--mint); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.download-card h3 { margin: 38px 0 12px; font-size: 1.9rem; letter-spacing: -.04em; }
+.download-card p { margin: 0 0 30px; color: #aebac5; }
+.download-card p strong { color: white; }
+.download-card .button { margin-top: auto; }
+.download-card .button span { margin-left: 8px; }
+.download-card small { display: block; margin-top: 18px; color: #8493a0; line-height: 1.55; }
+.button-secondary { color: #071321; background: #f5f7f4; }
+.download-checksums { margin: 24px 0 0; text-align: center; }
+.download-checksums a { color: var(--mint); font-size: .84rem; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+
+@media (max-width: 800px) {
+  .download-heading { grid-template-columns: 1fr; gap: 20px; }
+}
+
+@media (max-width: 560px) {
+  .download-grid { grid-template-columns: 1fr; }
+  .download-card { min-height: 360px; padding: 28px; }
+}
